@@ -1,7 +1,10 @@
 describe('Square', () =>  {
   describe('new Square()', () =>  {
     it('takes argument for a length of a side', () =>  {
+      let square = new Square(4);
 
+      expect(square).toBeDefined();
+      expect(square.side).toBe(4);
     });
 
     it('takes optional argument for the center point', () =>  {
