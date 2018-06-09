@@ -41,13 +41,18 @@ describe('Square', () =>  {
     });
   });
 
-  describe('contains_point?(x,y)', () =>  {
+  describe('contains(x, y)', () =>  {
     it('returns true for a point given inside of the square\'s perimeter', () => {
+      let square = new Square(4);
+
+      expect(square.contains(1, 1)).toBe(true);
 
     });
 
     it('returns false for a point given outside of the square\'s perimeter', () => {
+      let square = new Square(4);
 
+      expect(square.contains(4, 4)).toBe(false);
     });
   });
 });
