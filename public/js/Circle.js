@@ -15,6 +15,8 @@ class Circle {
     }
 
     perimeter() {
-      return Math.PI * this.radius;
+      return 2 * Math.PI * this.radius;
     }
+
+
 }
